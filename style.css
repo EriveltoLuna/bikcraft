@@ -66,7 +66,7 @@ nav a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   max-width: 1000px;
 }
 
@@ -103,7 +103,7 @@ main {
   background-color: #900;
 }
 
-.bicicleta {
+.bicicleta img {
   max-width: 100%;
   display: block;
 }
@@ -175,6 +175,13 @@ li p {
 
   .subtitulo h2 {
     background-image: none;
+  }
+}
+
+@media (max-width: 610px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
